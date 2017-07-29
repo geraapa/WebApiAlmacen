@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SistemaAlmacenModelStoreContainer" CdmEntityContainer="SistemaAlmacenEntities1">
+    <EntitySetMapping Name="Almacen">
+      <EntityTypeMapping TypeName="SistemaAlmacenModel.Almacen">
+        <MappingFragment StoreEntitySet="Almacen">
+          <ScalarProperty Name="iIdAlmacen" ColumnName="iIdAlmacen" />
+          <ScalarProperty Name="vchDescripcion" ColumnName="vchDescripcion" />
+          <ScalarProperty Name="vchClave" ColumnName="vchClave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipo">
+      <EntityTypeMapping TypeName="SistemaAlmacenModel.Equipo">
+        <MappingFragment StoreEntitySet="Equipo">
+          <ScalarProperty Name="iIdEquipo" ColumnName="iIdEquipo" />
+          <ScalarProperty Name="iIdMarca" ColumnName="iIdMarca" />
+          <ScalarProperty Name="iIdModelo" ColumnName="iIdModelo" />
+          <ScalarProperty Name="vchNoSerie" ColumnName="vchNoSerie" />
+          <ScalarProperty Name="iExistencia" ColumnName="iExistencia" />
+          <ScalarProperty Name="vchProveedor" ColumnName="vchProveedor" />
+          <ScalarProperty Name="iIdAlmacen" ColumnName="iIdAlmacen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marca">
+      <EntityTypeMapping TypeName="SistemaAlmacenModel.Marca">
+        <MappingFragment StoreEntitySet="Marca">
+          <ScalarProperty Name="iIdMarca" ColumnName="iIdMarca" />
+          <ScalarProperty Name="vchDescripcion" ColumnName="vchDescripcion" />
+          <ScalarProperty Name="vchClave" ColumnName="vchClave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modelo">
+      <EntityTypeMapping TypeName="SistemaAlmacenModel.Modelo">
+        <MappingFragment StoreEntitySet="Modelo">
+          <ScalarProperty Name="iIdModelo" ColumnName="iIdModelo" />
+          <ScalarProperty Name="vchDescripcion" ColumnName="vchDescripcion" />
+          <ScalarProperty Name="vchClave" ColumnName="vchClave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
